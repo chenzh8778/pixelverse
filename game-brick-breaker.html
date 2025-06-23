@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker: Classic Arcade Game - GridVerse</title>
+    <meta name="description" content="Play the timeless arcade classic, Brick Breaker. Control the paddle, bounce the ball, and destroy all the bricks to win. Free to play on GridVerse.">
+    <link rel="canonical" href="https://www.your-gaming-site.com/game-brick-breaker.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧱</text></svg>">
+    <meta property="og:title" content="Brick Breaker: Classic Arcade Game - GridVerse">
+    <meta property="og:description" content="Relive the fun of the classic brick-breaking arcade game.">
+    <meta property="og:url" content="https://www.your-gaming-site.com/game-brick-breaker.html">
+    <meta property="og:image" content="https://www.your-gaming-site.com/assets/bricks-social-image.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Brick Breaker",
+          "genre": ["Arcade", "Action"],
+          "playMode": "SinglePlayer"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What is the best strategy for Brick Breaker?",
+            "acceptedAnswer": { "text": "A key strategy is to try and get the ball into the space between the top row of bricks and the ceiling. Once behind the bricks, the ball will bounce around and destroy many bricks very quickly. Also, try to use the edges of the paddle to 'aim' the ball." }
+          },{
+            "@type": "Question",
+            "name": "Are there any power-ups in this version?",
+            "acceptedAnswer": { "text": "This is a classic, pure version of Brick Breaker, so it does not include power-ups like paddle extenders or multi-balls. It's all about your skill with the paddle and ball!" }
+          }]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #gameCanvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800"><nav class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex-shrink-0"><a href="./index.html" class="flex items-center space-x-2"><span class="text-2xl">🎮</span><span class="text-xl font-bold text-white">GridVerse</span></a></div><div><a href="./index.html" class="text-slate-300 hover:text-white transition-colors">&larr; Back to All Games</a></div></div></nav></header>
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <article class="max-w-4xl mx-auto">
+            <header class="text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Brick Breaker</h1>
+                <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">An arcade classic of precision and reflexes.</p>
+            </header>
+            <section class="my-8 md:my-12">
+                <div class="max-w-md mx-auto bg-slate-800 p-4 rounded-xl shadow-2xl ring-2 ring-slate-800">
+                    <canvas id="gameCanvas" width="480" height="320" class="w-full h-auto bg-black rounded-lg cursor-pointer"></canvas>
+                    <div id="gameStateText" class="text-center text-lg font-bold text-yellow-400 mt-2">Click to Start</div>
+                </div>
+            </section>
+            <div class="prose prose-slate prose-invert max-w-none text-left mx-auto">
+                <section class="mt-12">
+                    <h2>Review & Strategy</h2>
+                    <p>Brick Breaker is one of the most iconic arcade concepts, tracing its lineage back to the legendary games 'Breakout' and 'Arkanoid'. The satisfaction of clearing a row of bricks with a well-placed shot is timeless. This version captures the pure, uncluttered essence of the original, focusing on the core mechanics of paddle control and ball physics.</p>
+                    <h3>Tips for Victory</h3>
+                    <ul><li><strong>Control the Angles:</strong> Where the ball hits your paddle matters. Hitting it on the left side will send it flying left, and hitting it on the right will send it right. Use this to aim for weak spots in the brick wall.</li><li><strong>Go for the Top:</strong> The most effective tactic is to break a hole through the side of the brick formation and send the ball into the empty space at the top. It will bounce multiple times, clearing many bricks before it comes back down.</li><li><strong>Focus on the Ball:</strong> It sounds simple, but don't get distracted by the bricks exploding. Your number one priority is always to get your paddle under the ball.</li></ul>
+                </section>
+                <section class="mt-12">
+                    <h2>Frequently Asked Questions (FAQ)</h2>
+                    <h4>What is the best strategy for Brick Breaker?</h4><p>A key strategy is to try and get the ball into the space between the top row of bricks and the ceiling. Once behind the bricks, the ball will bounce around and destroy many bricks very quickly. Also, try to use the edges of the paddle to 'aim' the ball.</p>
+                    <h4>Are there any power-ups in this version?</h4><p>This is a classic, pure version of Brick Breaker, so it does not include power-ups like paddle extenders or multi-balls. It's all about your skill with the paddle and ball!</p>
+                </section>
+            </div>
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center">You Might Also Like</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <a href="./game-snake.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Snake" alt="Retro Snake game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Retro Snake</h3><p class="text-sm text-slate-400 mt-1">Another timeless classic.</p></div></a>
+                    <a href="./game-asteroid-dodger.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Asteroids" alt="Asteroid Dodger game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Asteroid Dodger</h3><p class="text-sm text-slate-400 mt-1">More fast-paced arcade fun.</p></div></a>
+                    <a href="./game-connect-four.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e40af/ffffff?text=Connect+Four" alt="Connect Four game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Connect Four</h3><p class="text-sm text-slate-400 mt-1">If you prefer a slower, strategic pace.</p></div></a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="text-center py-8 border-t border-slate-800"><p class="text-sm text-slate-500">&copy; 2025 GridVerse. All Rights Reserved.</p></footer>
+    <script>
+        // Game logic for Brick Breaker
+        const canvas = document.getElementById('gameCanvas'); const ctx = canvas.getContext('2d'); const gameStateText = document.getElementById('gameStateText');
+        let ball, paddle, bricks, score, gameOver;
+        function init() { paddle = { x: canvas.width / 2 - 40, y: canvas.height - 20, width: 80, height: 10, dx: 0 }; ball = { x: canvas.width / 2, y: canvas.height - 30, radius: 7, dx: 2, dy: -2 }; bricks = []; const brickRowCount = 5, brickColumnCount = 9, brickWidth = 40, brickHeight = 15, brickPadding = 10, offsetTop = 30, offsetLeft = 30; for (let c = 0; c < brickColumnCount; c++) { for (let r = 0; r < brickRowCount; r++) { bricks.push({ x: (c * (brickWidth + brickPadding)) + offsetLeft, y: (r * (brickHeight + padding)) + offsetTop, status: 1 }); } } score = 0; gameOver = true; gameStateText.textContent = 'Click to Start'; draw(); }
+        function draw() { ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.fillStyle = "#0095DD"; ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height); ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2); ctx.fill(); ctx.closePath(); bricks.forEach(brick => { if (brick.status === 1) { ctx.fillStyle = "#DD4A48"; ctx.fillRect(brick.x, brick.y, 40, 15); } }); }
+        function update() { if (gameOver) return; ball.x += ball.dx; ball.y += ball.dy; if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) ball.dx = -ball.dx; if (ball.y - ball.radius < 0) ball.dy = -ball.dy; if (ball.y + ball.radius > canvas.height) { gameOver = true; gameStateText.textContent = 'Game Over! Click to Restart.'; } if (ball.y + ball.radius > paddle.y && ball.x > paddle.x && ball.x < paddle.x + paddle.width) { ball.dy = -ball.dy; let deltaX = ball.x - (paddle.x + paddle.width / 2); ball.dx = deltaX * 0.15; } bricks.forEach(b => { if (b.status === 1) { if (ball.x > b.x && ball.x < b.x + 40 && ball.y > b.y && ball.y < b.y + 15) { b.status = 0; ball.dy = -ball.dy; score++; if (score === bricks.length) { gameOver = true; gameStateText.textContent = 'You Win! Click to Restart.'; } } } }); draw(); requestAnimationFrame(update); }
+        canvas.addEventListener('mousemove', e => { const relativeX = e.clientX - canvas.getBoundingClientRect().left; if (relativeX > paddle.width / 2 && relativeX < canvas.width - paddle.width / 2) paddle.x = relativeX - paddle.width / 2; });
+        canvas.addEventListener('click', () => { if (gameOver) { init(); gameOver = false; gameStateText.textContent = ''; update(); } });
+        init();
+    </script>
+</body>
+</html>

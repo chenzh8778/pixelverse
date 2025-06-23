@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Dodger: A Space Survival Game - GridVerse</title>
+    <meta name="description" content="Pilot your ship through a dangerous asteroid field! A fast-paced survival game that tests your reflexes. Play free on GridVerse.">
+    <link rel="canonical" href="https://www.your-gaming-site.com/game-asteroid-dodger.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☄️</text></svg>">
+    <meta property="og:title" content="Asteroid Dodger: A Space Survival Game - GridVerse">
+    <meta property="og:description" content="Dodge the falling asteroids and survive as long as you can in this thrilling arcade game.">
+    <meta property="og:url" content="https://www.your-gaming-site.com/game-asteroid-dodger.html">
+    <meta property="og:image" content="https://www.your-gaming-site.com/assets/dodger-social-image.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Asteroid Dodger",
+          "genre": ["Action", "Arcade", "Sci-Fi"],
+          "playMode": "SinglePlayer"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How does the game get harder over time?",
+            "acceptedAnswer": { "text": "The game's difficulty increases gradually as your score goes up. The asteroids will begin to fall faster, and the rate at which new asteroids appear will increase, making the screen more crowded." }
+          },{
+            "@type": "Question",
+            "name": "Can you shoot the asteroids?",
+            "acceptedAnswer": { "text": "This version of the game is purely about survival and dodging. There are no shooting mechanics, which makes every move critical." }
+          }]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #gameCanvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800"><nav class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex-shrink-0"><a href="./index.html" class="flex items-center space-x-2"><span class="text-2xl">🎮</span><span class="text-xl font-bold text-white">GridVerse</span></a></div><div><a href="./index.html" class="text-slate-300 hover:text-white transition-colors">&larr; Back to All Games</a></div></div></nav></header>
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <article class="max-w-4xl mx-auto">
+            <header class="text-center"><h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Asteroid Dodger</h1><p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">A high-speed test of your dodging skills.</p></header>
+            <section class="my-8 md:my-12">
+                <div class="max-w-md mx-auto bg-slate-800 p-4 rounded-xl shadow-2xl ring-2 ring-slate-800">
+                    <canvas id="gameCanvas" width="400" height="500" class="w-full h-auto bg-gray-900 rounded-lg"></canvas>
+                    <div class="mt-4 flex justify-between items-center text-white"><div class="text-lg">Score: <span id="score">0</span></div></div>
+                    <div id="gameStateText" class="text-center text-lg font-bold text-yellow-400 mt-2">Press Arrow Keys to Start</div>
+                </div>
+            </section>
+            <div class="prose prose-slate prose-invert max-w-none text-left mx-auto">
+                <section class="mt-12">
+                    <h2>Review & Strategy</h2>
+                    <p>Asteroid Dodger distills the excitement of space survival into a pure, arcade-style experience. There are no power-ups or special abilities—it's just you, your ship, and an endless barrage of cosmic rock. The game is a fantastic measure of reaction time and the ability to find safe paths through chaos. Its simple controls make it instantly accessible, while the ever-increasing speed provides a steep and satisfying challenge.</p>
+                    <h3>Survival Tips</h3>
+                    <ul><li><strong>Small, Controlled Movements:</strong> Avoid making wide, sweeping movements from one side of the screen to the other. Make small, precise adjustments to navigate through gaps.</li><li><strong>Stay Near the Center:</strong> While it seems counter-intuitive, staying closer to the center gives you more options to move left or right to dodge an obstacle. Hugging the walls can easily get you trapped.</li><li><strong>Look High:</strong> Focus your eyes on the top third of the screen where new asteroids appear. This gives you the maximum amount of time to react and plan your route.</li></ul>
+                </section>

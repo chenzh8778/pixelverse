@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe: The Classic Brain Game - GridVerse</title>
+    <meta name="description" content="Play a game of classic Tic-Tac-Toe (Noughts and Crosses). A simple, pure strategy game for two players, free to play on GridVerse.">
+    <link rel="canonical" href="https://www.your-gaming-site.com/play/tic-tac-toe">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⭕</text></svg>">
+    <meta property="og:title" content="Tic-Tac-Toe: The Classic Brain Game - GridVerse">
+    <meta property="og:description" content="Challenge a friend to the original paper-and-pencil game. Who will win?">
+    <meta property="og:url" content="https://www.your-gaming-site.com/play/tic-tac-toe">
+    <meta property="og:image" content="https://www.your-gaming-site.com/assets/tictactoe-social-image.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Tic-Tac-Toe",
+          "genre": ["Strategy", "Puzzle", "Board Game", "2-Player"],
+          "playMode": "MultiPlayer"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "Is it possible to always win at Tic-Tac-Toe?",
+            "acceptedAnswer": { "text": "No. Tic-Tac-Toe is a 'solved game' where the outcome with perfect play is always a draw. Neither player can force a win against an opponent who also plays perfectly." }
+          },{
+            "@type": "Question",
+            "name": "What is the best first move?",
+            "acceptedAnswer": { "text": "Playing in a corner square is generally considered the strongest opening move. It provides the most opportunities to create winning lines on your subsequent turns." }
+          }]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #gameCanvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800"><nav class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex-shrink-0"><a href="./index.html" class="flex items-center space-x-2"><span class="text-2xl">🎮</span><span class="text-xl font-bold text-white">GridVerse</span></a></div><div><a href="./index.html" class="text-slate-300 hover:text-white transition-colors">&larr; Back to All Games</a></div></div></nav></header>
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <article class="max-w-4xl mx-auto">
+            <header class="text-center"><h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Tic-Tac-Toe</h1><p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">A game of pure strategy. Simple to learn, impossible to master?</p></header>
+            <section class="my-8 md:my-12">
+                <div class="max-w-sm mx-auto bg-slate-800 p-4 rounded-xl shadow-2xl ring-2 ring-slate-800">
+                    <canvas id="gameCanvas" width="300" height="300" class="w-full h-auto bg-gray-900 rounded-lg cursor-pointer"></canvas>
+                    <div class="mt-4 flex justify-between items-center text-white"><div id="gameStateText" class="text-lg font-bold text-yellow-400">Player X's Turn</div><button id="resetButton" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">Restart</button></div>
+                </div>
+            </section>
+            <div class="prose prose-slate prose-invert max-w-none text-left mx-auto">
+                <section class="mt-12">
+                    <h2>Review & Strategy</h2>
+                    <p>Tic-Tac-Toe, or Noughts and Crosses, is arguably one of the first strategy games anyone learns. Its 3x3 grid is a canvas for logic and foresight. While its strategic depth is limited, it serves as a perfect introduction to fundamental game theory concepts like optimal play, forcing moves, and recognizing unwinnable situations. It is the quintessential "solved game," yet it remains a beloved pastime.</p>
+                    <h3>Optimal Play</h3>
+                    <p>The strategy for Tic-Tac-Toe is well-established. To never lose, you must play optimally:</p>
+                    <ol><li><strong>First move:</strong> Take a corner. This gives you the most paths to victory.</li><li><strong>Responding:</strong> If your opponent takes the center, take the opposite corner. If they take any other square, take another corner.</li><li><strong>Winning/Blocking:</strong> From your third move onwards, your priority is simple: if you can make a line of three, do it. If not, check if your opponent can make a line of three on their next turn. If so, you must block them. If neither is possible, make a move that creates a new potential line for yourself.</li></ol>
+                </section>
+                <section class="mt-12">
+                    <h2>Frequently Asked Questions (FAQ)</h2>
+                    <h4>Is it possible to always win at Tic-Tac-Toe?</h4><p>No. Tic-Tac-Toe is a 'solved game' where the outcome with perfect play is always a draw. Neither player can force a win against an opponent who also plays perfectly.</p>
+                    <h4>What is the best first move?</h4><p>Playing in a corner square is generally considered the strongest opening move. It provides the most opportunities to create winning lines on your subsequent turns.</p>
+                </section>
+            </div>
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center">You Might Also Like</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <a href="./game-connect-four.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e40af/ffffff?text=Connect+Four" alt="Connect Four game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Connect Four</h3><p class="text-sm text-slate-400 mt-1">A more complex grid strategy game.</p></div></a>
+                    <a href="./game-2048.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e293b/ffffff?text=2048" alt="2048 puzzle game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">2048 Classic</h3><p class="text-sm text-slate-400 mt-1">A different kind of puzzle.</p></div></a>
+                    <a href="./game-snake.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Snake" alt="Retro Snake game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Retro Snake</h3><p class="text-sm text-slate-400 mt-1">For a classic arcade experience.</p></div></a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="text-center py-8 border-t border-slate-800"><p class="text-sm text-slate-500">&copy; 2025 GridVerse. All Rights Reserved.</p></footer>
+    <script>
+        // Game logic for Tic-Tac-Toe
+        const canvas = document.getElementById('gameCanvas'); const ctx = canvas.getContext('2d'); const gameStateText = document.getElementById('gameStateText'); const resetButton = document.getElementById('resetButton');
+        const SIZE = 300, GRID_SIZE = 100; let board, currentPlayer, gameOver;
+        function init() { board = Array(9).fill(null); currentPlayer = 'X'; gameOver = false; gameStateText.textContent = `Player X's Turn`; drawBoard(); }
+        function drawBoard() { ctx.fillStyle = '#111827'; ctx.fillRect(0, 0, SIZE, SIZE); ctx.strokeStyle = '#4b5563'; ctx.lineWidth = 4; for (let i = 1; i < 3; i++) { ctx.beginPath(); ctx.moveTo(i * GRID_SIZE, 0); ctx.lineTo(i * GRID_SIZE, SIZE); ctx.moveTo(0, i * GRID_SIZE); ctx.lineTo(SIZE, i * GRID_SIZE); ctx.stroke(); } board.forEach((val, index) => { const x = (index % 3) * GRID_SIZE; const y = Math.floor(index / 3) * GRID_SIZE; ctx.font = 'bold 64px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; if (val === 'X') { ctx.fillStyle = '#38bdf8'; ctx.fillText('X', x + GRID_SIZE / 2, y + GRID_SIZE / 2); } else if (val === 'O') { ctx.fillStyle = '#facc15'; ctx.fillText('O', x + GRID_SIZE / 2, y + GRID_SIZE / 2); } }); }
+        function checkWin() { const winConditions = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]; for (let condition of winConditions) { const [a, b, c] = condition; if (board[a] && board[a] === board[b] && board[a] === board[c]) return board[a]; } return board.includes(null) ? null : 'Draw'; }
+        canvas.addEventListener('click', e => { if (gameOver) return; const rect = canvas.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; const col = Math.floor(x / GRID_SIZE); const row = Math.floor(y / GRID_SIZE); const index = row * 3 + col; if (board[index] === null) { board[index] = currentPlayer; drawBoard(); const winner = checkWin(); if (winner) { gameOver = true; gameStateText.textContent = winner === 'Draw' ? "It's a Draw!" : `Player ${winner} Wins!`; } else { currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; gameStateText.textContent = `Player ${currentPlayer}'s Turn`; } } });
+        resetButton.addEventListener('click', init);
+        init();
+    </script>
+</body>
+</html>
