@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Block: The Ultimate Timing Challenge - GridVerse</title>
+    <meta name="description" content="Test your timing and patience with Flappy Block, a classic 'one-more-try' arcade game. Navigate the pipes and get the high score. Free to play on GridVerse.">
+    <link rel="canonical" href="https://www.your-gaming-site.com/game-flappy-block.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
+    <meta property="og:title" content="Flappy Block: The Ultimate Timing Challenge - GridVerse">
+    <meta property="og:description" content="Tap, flap, and survive! How many pipes can you pass through?">
+    <meta property="og:url" content="https://www.your-gaming-site.com/play/flappy-block">
+    <meta property="og:image" content="https://www.your-gaming-site.com/assets/flappy-social-image.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Flappy Block",
+          "genre": ["Arcade", "Action", "Endless Runner"],
+          "playMode": "SinglePlayer"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What is the key to getting a high score in Flappy Block?",
+            "acceptedAnswer": { "text": "The key is rhythm and calm. Avoid panicked, rapid tapping. Try to find a steady rhythm of small, gentle taps to maintain a stable altitude. React to the pipes calmly instead of over-correcting." }
+          },{
+            "@type": "Question",
+            "name": "Is Flappy Block supposed to be this difficult?",
+            "acceptedAnswer": { "text": "Yes. The 'Flappy' genre of games is notoriously difficult. Its challenge is a core part of its appeal, creating a strong 'just one more try' feeling in players. Don't be discouraged!" }
+          }]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #gameCanvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800"><nav class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex-shrink-0"><a href="./index.html" class="flex items-center space-x-2"><span class="text-2xl">🎮</span><span class="text-xl font-bold text-white">GridVerse</span></a></div><div><a href="./index.html" class="text-slate-300 hover:text-white transition-colors">&larr; Back to All Games</a></div></div></nav></header>
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <article class="max-w-4xl mx-auto">
+            <header class="text-center"><h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Flappy Block</h1><p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">Tap, flap, survive. A legendary test of patience and timing.</p></header>
+            <section class="my-8 md:my-12">
+                <div class="max-w-sm mx-auto bg-slate-800 p-4 rounded-xl shadow-2xl ring-2 ring-slate-800">
+                    <canvas id="gameCanvas" width="288" height="512" class="w-auto h-auto max-h-[70vh] bg-cyan-600 rounded-lg cursor-pointer mx-auto"></canvas>
+                    <div id="gameStateText" class="text-center text-xl font-bold text-white mt-4">Score: <span id="score">0</span></div>
+                </div>
+            </section>
+            <div class="prose prose-slate prose-invert max-w-none text-left mx-auto">
+                <section class="mt-12">
+                    <h2>Review & Strategy</h2>
+                    <p>Flappy Block follows the formula of a game genre that took the world by storm. It is deceptively simple: tap to go up, do nothing to fall. The physics are easy to grasp, but the precision required to navigate the narrow gaps is brutally difficult. This high difficulty, combined with instant restarts, creates an addictive loop that is both infuriating and immensely satisfying when you beat your own high score.</p>
+                    <h3>Tips for a High Score</h3>
+                    <ul><li><strong>Rhythm is Everything:</strong> Don't mash the spacebar. Find a calm, steady rhythm of gentle taps to maintain a relatively stable altitude. This makes it easier to make small adjustments.</li><li><strong>Aim for the Middle:</strong> When approaching a gap, aim for the vertical center. This gives you the most room for error if you tap slightly too early or too late.</li><li><strong>Stay Calm:</strong> The most common reason for failure is panic. When you see a difficult pipe placement, take a deep breath and trust your rhythm. A panicked, rapid series of taps will almost always end your run.</li></ul>
+                </section>
+                <section class="mt-12">
+                    <h2>Frequently Asked Questions (FAQ)</h2>
+                    <h4>What is the key to getting a high score in Flappy Block?</h4><p>The key is rhythm and calm. Avoid panicked, rapid tapping. Try to find a steady rhythm of small, gentle taps to maintain a stable altitude. React to the pipes calmly instead of over-correcting.</p>
+                    <h4>Is Flappy Block supposed to be this difficult?</h4><p>Yes. The 'Flappy' genre of games is notoriously difficult. Its challenge is a core part of its appeal, creating a strong 'just one more try' feeling in players. Don't be discouraged!</p>
+                </section>
+            </div>
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center">You Might Also Like</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <a href="./game-pixel-jumper.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e293b/ffffff?text=Jumper" alt="Pixel Jumper game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Pixel Jumper</h3><p class="text-sm text-slate-400 mt-1">Another one-button challenge.</p></div></a>
+                    <a href="./game-asteroid-dodger.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Asteroids" alt="Asteroid Dodger game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Asteroid Dodger</h3><p class="text-sm text-slate-400 mt-1">Test your dodging reflexes.</p></div></a>
+                    <a href="./game-grid-guardians.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/111827/ffffff?text=Guardians" alt="Grid Guardians game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Grid Guardians</h3><p class="text-sm text-slate-400 mt-1">If you prefer clicking over tapping.</p></div></a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="text-center py-8 border-t border-slate-800"><p class="text-sm text-slate-500">&copy; 2025 GridVerse. All Rights Reserved.</p></footer>
+    <script>
+        const canvas = document.getElementById('gameCanvas'); const ctx = canvas.getContext('2d'); const scoreElement = document.getElementById('score'); const gameStateText = document.getElementById('gameStateText');
+        const bird = { x: 50, y: 150, width: 20, height: 20, velocity: 0 };
+        const gravity = 0.4, jump = -8, pipeWidth = 50, pipeGap = 120, pipeInterval = 200;
+        let pipes = [], score = 0, frame = 0, gameOver = true;
+
+        function draw() {
+            ctx.fillStyle = '#0891b2'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#f59e0b'; ctx.fillRect(bird.x, bird.y, bird.width, bird.height);
+            ctx.fillStyle = '#16a34a';
+            pipes.forEach(pipe => { ctx.fillRect(pipe.x, 0, pipeWidth, pipe.top); ctx.fillRect(pipe.x, canvas.height - pipe.bottom, pipeWidth, pipe.bottom); });
+            scoreElement.textContent = score;
+            if(gameOver){
+                ctx.fillStyle = 'rgba(0,0,0,0.5)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = 'white'; ctx.font = '30px sans-serif'; ctx.textAlign = 'center';
+                ctx.fillText('Click or Press Space', canvas.width / 2, canvas.height / 2 - 20);
+                ctx.fillText('to Start', canvas.width / 2, canvas.height / 2 + 20);
+            }
+        }
+        function update() {
+            if (gameOver) return;
+            bird.velocity += gravity; bird.y += bird.velocity;
+            if (bird.y + bird.height > canvas.height || bird.y < 0) { return reset(); }
+            if (frame % pipeInterval === 0) {
+                const top = Math.random() * (canvas.height - pipeGap - 50) + 25;
+                pipes.push({ x: canvas.width, top: top, bottom: canvas.height - top - pipeGap });
+            }
+            pipes.forEach(pipe => {
+                pipe.x -= 2;
+                if(pipe.x + pipeWidth < 0) { pipes.shift(); }
+                if (bird.x < pipe.x + pipeWidth && bird.x + bird.width > pipe.x && (bird.y < pipe.top || bird.y + bird.height > canvas.height - pipe.bottom)) { return reset(); }
+                if (pipe.x + pipeWidth === bird.x) { score++; }
+            });
+            frame++;
+        }
+        function gameLoop() { update(); draw(); requestAnimationFrame(gameLoop); }
+        function reset() {
+            bird.y = 150; bird.velocity = 0; pipes = []; score = 0; frame = 0; gameOver = true;
+        }
+        function flap() { if(gameOver) { gameOver = false; } bird.velocity = jump; }
+        document.addEventListener('keydown', e => { if (e.code === 'Space') flap(); });
+        canvas.addEventListener('click', flap);
+        gameLoop();
+    </script>
+</body>
+</html>
