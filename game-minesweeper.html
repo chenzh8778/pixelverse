@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper: Classic Logic Puzzle Game - GridVerse</title>
+    <meta name="description" content="Play the classic game of Minesweeper online. Use logic and deduction to clear the board without detonating any mines. A true test of a sharp mind.">
+    <link rel="canonical" href="https://www.your-gaming-site.com/game-minesweeper.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💣</text></svg>">
+    <meta property="og:title" content="Minesweeper: Classic Logic Puzzle Game - GridVerse">
+    <meta property="og:description" content="Challenge your deductive skills with the classic game of Minesweeper.">
+    <meta property="og:url" content="https://www.your-gaming-site.com/play/minesweeper">
+    <meta property="og:image" content="https://www.your-gaming-site.com/assets/minesweeper-social-image.jpg">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Minesweeper",
+          "genre": ["Puzzle", "Strategy"],
+          "playMode": "SinglePlayer"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What do the numbers on the squares mean?",
+            "acceptedAnswer": { "text": "A number on a square indicates exactly how many mines are present in the eight squares immediately surrounding it. Use these numbers to deduce which adjacent squares are safe and which contain mines." }
+          },{
+            "@type": "Question",
+            "name": "How do you flag a mine?",
+            "acceptedAnswer": { "text": "In this version, you can right-click on a square to place a flag, marking it as a suspected mine. Right-click again to remove the flag. Flagging helps you keep track of potential dangers." }
+          }]
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        #gameCanvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 border-b border-slate-800"><nav class="container mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="flex-shrink-0"><a href="./index.html" class="flex items-center space-x-2"><span class="text-2xl">🎮</span><span class="text-xl font-bold text-white">GridVerse</span></a></div><div><a href="./index.html" class="text-slate-300 hover:text-white transition-colors">&larr; Back to All Games</a></div></div></nav></header>
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <article class="max-w-4xl mx-auto">
+            <header class="text-center"><h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Minesweeper</h1><p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">The ultimate game of logic and deduction. Don't step on a mine!</p></header>
+            <section class="my-8 md:my-12">
+                <div class="max-w-max mx-auto bg-slate-800 p-4 rounded-xl shadow-2xl ring-2 ring-slate-800">
+                    <div class="flex justify-between items-center text-white mb-4 px-2">
+                        <div class="text-lg">Mines: <span id="mineCount">10</span></div>
+                        <div id="gameStateText" class="text-lg font-bold text-yellow-400"></div>
+                        <button id="resetButton" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">Reset</button>
+                    </div>
+                    <canvas id="gameCanvas" width="320" height="320" class="w-auto h-auto bg-gray-900 rounded-lg cursor-pointer"></canvas>
+                </div>
+            </section>
+            <div class="prose prose-slate prose-invert max-w-none text-left mx-auto">
+                <section class="mt-12">
+                    <h2>Review & Strategy</h2>
+                    <p>Minesweeper is a legendary puzzle game that has been a staple of operating systems for decades. Unlike games of reflex, this is a game of pure logic. Each click is a calculated decision based on the information revealed. The suspense of clearing a large area, followed by the satisfaction of flagging the final mine, is a uniquely rewarding experience that no other game quite replicates.</p>
+                    <h3>Tips for Sweeping Mines</h3>
+                    <ul><li><strong>Start with the Corners:</strong> Clicking the corners first often reveals larger open areas, giving you more information to start with.</li><li><strong>Learn the Patterns:</strong> You'll begin to recognize common number patterns. For example, a '1' on the edge of a cleared area with only one unknown square next to it *must* mean that unknown square is a mine. Flag it immediately.</li><li><strong>Use Your Flags:</strong> Don't try to remember where all the mines are. Use the right-click to flag suspected mines. This clears your mental workspace and helps you solve more complex areas.</li></ul>
+                </section>
+                <section class="mt-12">
+                    <h2>Frequently Asked Questions (FAQ)</h2>
+                    <h4>What do the numbers on the squares mean?</h4><p>A number on a square indicates exactly how many mines are present in the eight squares immediately surrounding it. Use these numbers to deduce which adjacent squares are safe and which contain mines.</p>
+                    <h4>How do you flag a mine?</h4><p>In this version, you can <strong>right-click</strong> on a square to place a flag, marking it as a suspected mine. Right-click again to remove the flag. Flagging helps you keep track of potential dangers.</p>
+                </section>
+            </div>
+            <section class="mt-16">
+                <h2 class="text-3xl font-bold text-white mb-6 text-center">You Might Also Like</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <a href="./game-connect-four.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e40af/ffffff?text=Connect+Four" alt="Connect Four game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Connect Four</h3><p class="text-sm text-slate-400 mt-1">Another logic-based classic.</p></div></a>
+                    <a href="./game-tic-tac-toe.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=X+O" alt="Tic-Tac-Toe game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Tic-Tac-Toe</h3><p class="text-sm text-slate-400 mt-1">For pure strategy.</p></div></a>
+                    <a href="./game-grid-guardians.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/111827/ffffff?text=Guardians" alt="Grid Guardians game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Grid Guardians</h3><p class="text-sm text-slate-400 mt-1">If you prefer reaction over logic.</p></div></a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="text-center py-8 border-t border-slate-800"><p class="text-sm text-slate-500">&copy; 2025 GridVerse. All Rights Reserved.</p></footer>
+    <script>
+        const canvas = document.getElementById('gameCanvas'); const ctx = canvas.getContext('2d'); const resetButton = document.getElementById('resetButton'); const mineCountElement = document.getElementById('mineCount'); const gameStateText = document.getElementById('gameStateText');
+        const ROWS = 16, COLS = 16, TILE_SIZE = 20, MINE_COUNT = 40;
+        let board, gameOver;
+
+        function init() {
+            board = Array(ROWS).fill(null).map(() => Array(COLS).fill(null).map(() => ({ isMine: false, isRevealed: false, isFlagged: false, adjacentMines: 0 })));
+            gameOver = false;
+            let minesPlaced = 0;
+            while (minesPlaced < MINE_COUNT) {
+                const row = Math.floor(Math.random() * ROWS);
+                const col = Math.floor(Math.random() * COLS);
+                if (!board[row][col].isMine) {
+                    board[row][col].isMine = true;
+                    minesPlaced++;
+                }
+            }
+            for (let r = 0; r < ROWS; r++) {
+                for (let c = 0; c < COLS; c++) {
+                    if (!board[r][c].isMine) {
+                        let count = 0;
+                        for (let dr = -1; dr <= 1; dr++) {
+                            for (let dc = -1; dc <= 1; dc++) {
+                                if (dr === 0 && dc === 0) continue;
+                                const nr = r + dr, nc = c + dc;
+                                if (nr >= 0 && nr < ROWS && nc >= 0 && nc < COLS && board[nr][nc].isMine) {
+                                    count++;
+                                }
+                            }
+                        }
+                        board[r][c].adjacentMines = count;
+                    }
+                }
+            }
+            mineCountElement.textContent = MINE_COUNT;
+            gameStateText.textContent = '';
+            draw();
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let r = 0; r < ROWS; r++) {
+                for (let c = 0; c < COLS; c++) {
+                    const tile = board[r][c];
+                    ctx.beginPath();
+                    ctx.rect(c * TILE_SIZE, r * TILE_SIZE, TILE_SIZE, TILE_SIZE);
+                    ctx.fillStyle = tile.isRevealed ? '#4a5568' : '#cbd5e1';
+                    if (gameOver && tile.isMine) ctx.fillStyle = 'red';
+                    ctx.fill();
+                    ctx.strokeStyle = '#1e293b';
+                    ctx.stroke();
+
+                    if (tile.isFlagged && !tile.isRevealed) {
+                        ctx.fillStyle = 'orange';
+                        ctx.font = '16px sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('🚩', c * TILE_SIZE + TILE_SIZE / 2, r * TILE_SIZE + TILE_SIZE / 2 + 6);
+                    } else if (tile.isRevealed && !tile.isMine && tile.adjacentMines > 0) {
+                        ctx.fillStyle = 'white';
+                        ctx.font = 'bold 14px sans-serif';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(tile.adjacentMines, c * TILE_SIZE + TILE_SIZE / 2, r * TILE_SIZE + TILE_SIZE / 2 + 5);
+                    }
+                }
+            }
+        }
+
+        function revealTile(r, c) {
+            if (r < 0 || r >= ROWS || c < 0 || c >= COLS || board[r][c].isRevealed || board[r][c].isFlagged) return;
+            board[r][c].isRevealed = true;
+            if (board[r][c].isMine) {
+                gameOver = true;
+                gameStateText.textContent = 'Game Over!';
+                draw();
+            } else if (board[r][c].adjacentMines === 0) {
+                for (let dr = -1; dr <= 1; dr++) {
+                    for (let dc = -1; dc <= 1; dc++) {
+                        revealTile(r + dr, c + dc);
+                    }
+                }
+            }
+            checkWin();
+        }
+
+        function checkWin() {
+            let revealedCount = 0;
+            board.forEach(row => row.forEach(tile => { if(tile.isRevealed) revealedCount++; }));
+            if(revealedCount === ROWS * COLS - MINE_COUNT) {
+                gameOver = true;
+                gameStateText.textContent = 'You Win!';
+            }
+        }
+
+        canvas.addEventListener('click', e => {
+            if (gameOver) return;
+            const col = Math.floor(e.offsetX / TILE_SIZE);
+            const row = Math.floor(e.offsetY / TILE_SIZE);
+            revealTile(row, col);
+            draw();
+        });
+
+        canvas.addEventListener('contextmenu', e => {
+            e.preventDefault();
+            if (gameOver) return;
+            const col = Math.floor(e.offsetX / TILE_SIZE);
+            const row = Math.floor(e.offsetY / TILE_SIZE);
+            if (!board[row][col].isRevealed) {
+                board[row][col].isFlagged = !board[row][col].isFlagged;
+            }
+            draw();
+        });
+
+        resetButton.addEventListener('click', init);
+        init();
+    </script>
+</body>
+</html>
