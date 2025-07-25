@@ -6,9 +6,26 @@
   <title>Privacy Policy - H5 Game Park</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: -1;
+    }
+    .prose a { color: #3b82f6; }
+    .prose a:hover { color: #60a5fa; }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen text-gray-800">
-  <header class="bg-white shadow sticky top-0 z-10">
+<body class="relative min-h-screen">
+  <header class="bg-white/80 backdrop-blur-sm shadow sticky top-0 z-10">
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <a href="index.html" class="text-2xl font-bold text-blue-600">H5 Game Park</a>
       <input type="text" placeholder="Search games..." class="border rounded px-3 py-1 w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
@@ -16,10 +33,10 @@
   </header>
 
   <main class="container mx-auto mt-8 px-6 max-w-4xl">
-    <div class="bg-white p-8 rounded-lg shadow-lg">
+    <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg">
       <article class="prose max-w-none">
         <h1>Privacy Policy</h1>
-        <p><em>Last Updated: July 24, 2025</em></p>
+        <p><em>Last Updated: July 25, 2025</em></p>
 
         <p>H5 Game Park ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
 
@@ -41,7 +58,7 @@
         <h2>Third-Party Services</h2>
         <p>This site uses third-party services for hosting games and serving advertisements:</p>
         <ul>
-            <li><strong>Embedded Games:</strong> Many games on this site are embedded from third-party providers like GameDistribution. These providers may have their own privacy policies and may use their own cookies or tracking technologies. We are not responsible for the privacy practices of these third parties.</li>
+            <li><strong>Embedded Games:</strong> Many games on this site are embedded from third-party providers. These providers may have their own privacy policies and may use their own cookies or tracking technologies. We are not responsible for the privacy practices of these third parties.</li>
             <li><strong>Advertising:</strong> We may use third-party advertising companies, such as Google AdSense, to serve ads when you visit the Site. These companies may use information about your visits to this and other websites that are contained in web cookies in order to provide advertisements about goods and services of interest to you.</li>
         </ul>
 
@@ -57,13 +74,13 @@
     </div>
   </main>
 
-  <footer class="mt-12 py-6 text-center text-gray-500 text-sm bg-white shadow-inner">
+  <footer class="mt-12 py-6 text-center text-gray-200 text-sm">
     <div class="container mx-auto px-6">
       <div class="mb-2">
-        <a href="about.html" class="px-2 hover:text-blue-600 transition">About Us</a> |
-        <a href="contact.html" class="px-2 hover:text-blue-600 transition">Contact Us</a> |
-        <a href="privacy.html" class="px-2 hover:text-blue-600 transition">Privacy Policy</a> |
-        <a href="terms.html" class="px-2 hover:text-blue-600 transition">Terms of Service</a>
+        <a href="about.html" class="px-2 hover:text-white transition">About Us</a> |
+        <a href="contact.html" class="px-2 hover:text-white transition">Contact Us</a> |
+        <a href="privacy.html" class="px-2 hover:text-white transition">Privacy Policy</a> |
+        <a href="terms.html" class="px-2 hover:text-white transition">Terms of Service</a>
       </div>
       <div>
         © 2025 H5 Game Park. All rights reserved.
