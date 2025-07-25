@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="page-title">Game Detail</title>
+  <meta name="description" id="meta-description" content="">
+  <meta name="keywords" id="meta-keywords" content="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-10">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">H5 Game Park</a>
+      <input type="text" placeholder="Search games..." class="border rounded px-3 py-1 w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-8 px-6 max-w-4xl">
+    
+    <h1 id="game-title" class="text-3xl font-bold mb-2"></h1>
+    <h2 id="game-subtitle" class="text-lg text-blue-600 mb-6"></h2>
+    
+    <div class="mb-6">
+      <iframe id="game-iframe" src="" allowfullscreen frameborder="0" class="w-full h-96 md:h-[500px] rounded-lg shadow-lg"></iframe>
+    </div>
+    <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 text-lg font-semibold mb-12">▶️ Play Now</button>
+
+    <div id="content-sections-wrapper" class="space-y-12">
+      <section id="overview-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Gameplay Overview</h3>
+        <div id="overview-content" class="prose max-w-none"></div>
+      </section>
+      <section id="how-to-play-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">How to Play</h3>
+        <div id="how-to-play-content" class="prose max-w-none"></div>
+      </section>
+      <section id="features-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Main Features</h3>
+        <div id="features-content" class="prose max-w-none"></div>
+      </section>
+      <section id="pro-tips-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Pro Tips & Strategies</h3>
+        <div id="pro-tips-content" class="prose max-w-none"></div>
+      </section>
+      <section id="similar-games-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Similar Games</h3>
+        <div id="similar-games-content" class="prose max-w-none"></div>
+      </section>
+      <section id="faq-section" class="hidden">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Frequently Asked Questions</h3>
+        <div id="faq-content" class="prose max-w-none"></div>
+      </section>
+    </div>
+
+    <section id="recommendations-section" class="mt-12">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2">Recommended Games</h3>
+        <div id="recommendations-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 py-6 text-center text-gray-500 text-sm bg-white shadow-inner">
+    <div class="container mx-auto px-6">
+      <div class="mb-2">
+        <a href="about.html" class="px-2 hover:text-blue-600 transition">About Us</a> |
+        <a href="contact.html" class="px-2 hover:text-blue-600 transition">Contact Us</a> |
+        <a href="privacy.html" class="px-2 hover:text-blue-600 transition">Privacy Policy</a> |
+        <a href="terms.html" class="px-2 hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+      <div>
+        © 2025 H5 Game Park. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="detail.js"></script>
+</body>
+</html>

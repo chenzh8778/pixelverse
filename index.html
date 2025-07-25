@@ -1,50 +1,265 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732577576594743"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GridVerse - Your Ultimate Gaming Hub</title>
-    <meta name="description" content="Welcome to GridVerse, your ultimate hub for free online games. Explore our library of 8 classic and new puzzle, arcade, and strategy games.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>H5 Game Park - Play Free Online & Unblocked HTML5 Games</title>
+  
+  <meta name="description" content="Discover and play a huge collection of free online HTML5 games at H5 Game Park. All games are unblocked and ready to play in your browser. Find puzzle, racing, simulation, arcade, and more!"/>
+  
+  <link rel="canonical" href="https://www.your-domain.com/index.html" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "H5 Game Park - Free Online Games",
+    "description": "A collection of the best free-to-play, unblocked HTML5 games available online.",
+    "url": "https://www.your-domain.com/index.html",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "VideoGame",
+            "name": "Super Dog Hero Dash",
+            "url": "https://www.your-domain.com/detail.html?game=f4cd73bd55df4befaf6262e8f5f412a3"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "VideoGame",
+            "name": "Children Happy Farm DuDu",
+            "url": "https://www.your-domain.com/detail.html?game=9e90ce4e83244923bb4680672a407022"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "VideoGame",
+            "name": "BURGER CATCH",
+            "url": "https://www.your-domain.com/detail.html?game=a9afce108d824d6f838218dd87aa2ef4"
+          }
         }
-    </style>
+      ]
+    }
+  }
+  </script>
+
 </head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-10">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">H5 Game Park</h1>
+      <input type="text" placeholder="Search games..." class="border rounded px-3 py-1 w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+    </div>
+  </header>
 
-<body class="bg-slate-900 text-slate-300 font-sans">
-    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
-    </header>
+  <nav class="container mx-auto mt-4 px-6">
+    <div id="category-buttons" class="flex space-x-4 overflow-x-auto">
+      <button data-category="all" class="category-btn px-4 py-2 bg-blue-500 text-white rounded-full">All</button>
+      <button data-category="puzzle" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Puzzle</button>
+      <button data-category="runner" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Runner</button>
+      <button data-category="simulation" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Simulation</button>
+      <button data-category="racing" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Racing</button>
+      <button data-category="arcade" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Arcade</button>
+      <button data-category="strategy" class="category-btn px-4 py-2 bg-gray-100 text-gray-600 rounded-full">Strategy</button>
+    </div>
+  </nav>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-        <section class="text-center my-8 md:my-16">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Your Next Gaming Obsession</h1>
-            <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">Welcome to GridVerse! We are dedicated to bringing you the best collection of free, browser-based games. Whether you love a good puzzle, a fast-paced arcade challenge, or a strategic battle of wits, you'll find it here.</p>
-        </section>
+  <section class="container mx-auto mt-8 px-6">
+    <p class="text-gray-600">Welcome to H5 Game Park, your ultimate destination for the best free online HTML5 games. All our games are unblocked and ready to play in your browser, with no downloads required. Browse our collection of puzzle, racing, simulation, and arcade games and find your new favorite today!</p>
+  </section>
 
-        <section id="all-games" class="my-12 md:my-20">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white">Explore Our Game Library</h2>
-                <p class="mt-2 text-slate-400 max-w-2xl mx-auto">From timeless classics like <a href="./game-tic-tac-toe.html" class="text-blue-400 hover:underline">Tic-Tac-Toe</a> to modern hits, our library is constantly growing. Find a game below and start playing instantly!</p>
-            </div>
+  <main class="container mx-auto mt-8 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="runner">
+      <img src="https://img.gamedistribution.com/f4cd73bd55df4befaf6262e8f5f412a3-512x512.jpg" alt="Super Dog Hero Dash" class="rounded-lg mb-3 aspect-square object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Super Dog Hero Dash</h2>
+      <p class="text-gray-500 text-sm flex-1">An interesting 3D running game with endless adventure and fun!</p>
+      <a href="detail.html?game=f4cd73bd55df4befaf6262e8f5f412a3" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="simulation">
+      <img src="https://img.gamedistribution.com/9e90ce4e83244923bb4680672a407022-512x384.jpg" alt="Children Happy Farm DuDu" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Children Happy Farm DuDu</h2>
+      <p class="text-gray-500 text-sm flex-1">An amazing casual simulator where you take care of cute animals and manage your own farm.</p>
+      <a href="detail.html?game=9e90ce4e83244923bb4680672a407022" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="arcade">
+      <img src="https://img.gamedistribution.com/a9afce108d824d6f838218dd87aa2ef4-512x384.jpg" alt="BURGER CATCH" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">BURGER CATCH</h2>
+      <p class="text-gray-500 text-sm flex-1">Move the tray left and right to collect the correct burger ingredients and test your reflexes!</p>
+      <a href="detail.html?game=a9afce108d824d6f838218dd87aa2ef4" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/93f92f5d41d841cfbfb21df8b669811f-512x512.jpg" alt="Purrfect Puzzle" class="rounded-lg mb-3 aspect-square object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Purrfect Puzzle</h2>
+      <p class="text-gray-500 text-sm flex-1">An adorable cat-themed merging puzzle game, relaxing and fun for all puzzle lovers!</p>
+      <a href="detail.html?game=93f92f5d41d841cfbfb21df8b669811f" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="runner">
+      <img src="https://img.gamedistribution.com/4f6447a86e4e4e409173b38e2211b52e-200x120.jpg" alt="Escape From Tung Tung Sahur" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Escape From Tung Tung Sahur</h2>
+      <p class="text-gray-500 text-sm flex-1">A fast-paced runner-platformer that tests your reaction and operational limits!</p>
+      <a href="detail.html?game=4f6447a86e4e4e409173b38e2211b52e" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="simulation">
+      <img src="https://img.gamedistribution.com/18e7a43aa4b2464599e969427ea44aed-512x384.jpg" alt="I Am Security" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">I Am Security</h2>
+      <p class="text-gray-500 text-sm flex-1">Play as a security officer, identify suspicious people, and experience a realistic security simulation!</p>
+      <a href="detail.html?game=18e7a43aa4b2464599e969427ea44aed" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/ea08335b6c9043e7a2403f6d5e8d1664-512x384.jpg" alt="Merge Brainrot" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Merge Brainrot</h2>
+      <p class="text-gray-500 text-sm flex-1">Drop and merge cursed memes to create the ultimate brainrot. What will you unlock?</p>
+      <a href="detail.html?game=ea08335b6c9043e7a2403f6d5e8d1664" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/77569f589cf84438a280efbe72eb0fa8-512x384.jpg" alt="Pipe Puzzle: Connect & Flow" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Pipe Puzzle: Connect & Flow</h2>
+      <p class="text-gray-500 text-sm flex-1">Connect the pipes, enjoy the fun of solving puzzles. A brain game for all ages!</p>
+      <a href="detail.html?game=77569f589cf84438a280efbe72eb0fa8" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/77b3832bea20471ea28d506e1b415825-512x384.jpg" alt="Bubble Shooter Legend" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Bubble Shooter Legend</h2>
+      <p class="text-gray-500 text-sm flex-1">Classic bubble shooter gameplay. Match same-colored bubbles and challenge for a high score!</p>
+      <a href="detail.html?game=77b3832bea20471ea28d506e1b415825" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/4872dd63a1034a46b848a645ef92a60f-512x384.jpg" alt="Supermarket Sort: Grocery Game" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Supermarket Sort: Grocery Game</h2>
+      <p class="text-gray-500 text-sm flex-1">A supermarket sorting challenge to exercise your sorting and organization skills!</p>
+      <a href="detail.html?game=4872dd63a1034a46b848a645ef92a60f" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="racing">
+      <img src="https://img.gamedistribution.com/d632553ef7264d99aa438310073a6dc3-512x512.jpg" alt="NSR Street Car Racing" class="rounded-lg mb-3 aspect-square object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">NSR Street Car Racing</h2>
+      <p class="text-gray-500 text-sm flex-1">Hit the streets, master drifts, and challenge the limits of speed!</p>
+      <a href="detail.html?game=d632553ef7264d99aa438310073a6dc3" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://img.gamedistribution.com/2e53f90d22e74cef93eb9ac3533155cd-512x384.jpg" alt="Stickman Gun Shooter" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Stickman Gun Shooter</h2>
+      <p class="text-gray-500 text-sm flex-1">Stickman shooting with ragdoll physics and a variety of levels await your challenge!</p>
+      <a href="detail.html?game=2e53f90d22e74cef93eb9ac3533155cd" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="strategy">
+      <img src="https://img.gamedistribution.com/87c6432822364f3f8ac0dddfcb41611e-512x512.jpg" alt="Buckshot Roulette" class="rounded-lg mb-3 aspect-square object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Buckshot Roulette</h2>
+      <p class="text-gray-500 text-sm flex-1">An exciting roulette wheel showdown. The ultimate duel of strategy and luck!</p>
+      <a href="detail.html?game=87c6432822364f3f8ac0dddfcb41611e" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://images.twoplayergames.org/files/games/other/italian-brainrot-puzzle.jpg?auto=format&w=200" alt="Italian Brainrot Puzzle" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Italian Brainrot Puzzle</h2>
+      <p class="text-gray-500 text-sm flex-1">A hilarious, meme-filled jigsaw game that lets you piece together the internet’s most absurd and beloved Italian Brainrot characters.</p>
+      <a href="detail.html?game=a4f8c1b1-e2d3-4a7b-8c6d-9f2a1b3c4d5e" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="runner">
+      <img src="https://images.twoplayergames.org/files/games/h1/italian-brainrot-obby-parkour/italian-brainrot-obby-parkour.jpg?auto=format&w=200" alt="Italian Brainrot Obby Parkour" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Italian Brainrot Obby Parkour</h2>
+      <p class="text-gray-500 text-sm flex-1">A wild and hilarious platforming experience that blends meme-fueled chaos with classic obby parkour mechanics.</p>
+      <a href="detail.html?game=b8a1c5d5-f6e4-4b8c-9a1d-7f8e3b2a1c0d" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="simulation">
+      <img src="https://images.twoplayergames.org/files/games/h1/ball-eating-simulator/ball-eating-simulator-2.jpg?auto=format&w=200" alt="Ball Eating Simulator" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Ball Eating Simulator</h2>
+      <p class="text-gray-500 text-sm flex-1">Eat as many balls as you can to grow bigger in the arena. Eat others, earn coins, and unlock new skins in this fun simulator!</p>
+      <a href="detail.html?game=c9d7e6f2-a5b1-4c8d-8e3f-1a0b9c8d7e6f" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="arcade">
+      <img src="https://images.twoplayergames.org/files/games/other/baseball-bros.jpg?auto=format&w=200" alt="Baseball Bros" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Baseball Bros</h2>
+      <p class="text-gray-500 text-sm flex-1">A fast-paced, competitive multiplayer baseball game where timing, skill, and chaos collide.</p>
+      <a href="detail.html?game=d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="puzzle">
+      <img src="https://images.twoplayergames.org/files/games/g1/guess-the-italian-brainrot-animals-v3/guess-the-italian-brainrot-animals.jpg?auto=format&w=200" alt="Guess the Italian Brainrot Animals" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Guess the Italian Brainrot Animals</h2>
+      <p class="text-gray-500 text-sm flex-1">A fast-paced, emoji-fueled trivia game that tests your knowledge of 64 iconic Italian Brainrot characters!</p>
+      <a href="detail.html?game=e5f6g7h8-i9j0-4k1l-m2n3-o4p5q6r7s8t9" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="runner">
+      <img src="https://images.twoplayergames.org/files/games/other/br-br-patapim-obby.jpg?auto=format&w=200" alt="Br Br Patapim Obby Challenge" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">Br Br Patapim Obby Challenge</h2>
+      <p class="text-gray-500 text-sm flex-1">A hilarious and chaotic parkour game where memes meet madness. Play as the iconic Brr Brr Patapim and survive wacky levels!</p>
+      <a href="detail.html?game=f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+    <div class="game-card bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col" data-category="racing">
+      <img src="https://images.twoplayergames.org/files/games/other/SUV-traffic-racer.jpg?auto=format&w=200" alt="SUV Traffic Racer" class="rounded-lg mb-3 aspect-video object-cover"/>
+      <h2 class="text-lg font-semibold mb-1">SUV Traffic Racer</h2>
+      <p class="text-gray-500 text-sm flex-1">Weave through traffic, push your limits, and set the highest distance record you can in this endless highway racer.</p>
+      <a href="detail.html?game=a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d" class="mt-3 bg-blue-500 text-white text-center py-2 rounded hover:bg-blue-600">Play Game</a>
+    </div>
+  </main>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <a href="./game-minesweeper.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e293b/ffffff?text=Minesweeper" alt="The classic grid of the Minesweeper game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Minesweeper</h3><p class="text-sm text-slate-400 mt-1">The ultimate logic puzzle.</p></div></a>
-                <a href="./game-snake.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/111827/ffffff?text=Snake" alt="Gameplay screenshot of the classic Retro Snake game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Retro Snake</h3><p class="text-sm text-slate-400 mt-1">Eat, grow, and don't crash!</p></div></a>
-                <a href="./game-pixel-jumper.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e293b/ffffff?text=Pixel+Jumper" alt="A pixelated character jumping between platforms in Pixel Jumper"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Pixel Jumper</h3><p class="text-sm text-slate-400 mt-1">An endless jumping adventure.</p></div></a>
-                <a href="./game-grid-guardians.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/111827/ffffff?text=Grid+Guardians" alt="Defending a grid from red squares in Grid Guardians"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Grid Guardians</h3><p class="text-sm text-slate-400 mt-1">A strategic reaction game.</p></div></a>
-                <a href="./game-flappy-block.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/0891b2/ffffff?text=Flappy" alt="A blocky bird navigating between pipes in Flappy Block"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Flappy Block</h3><p class="text-sm text-slate-400 mt-1">A test of timing and patience.</p></div></a>
-                <a href="./game-memory-match.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Memory" alt="A memory matching card game"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Memory Match</h3><p class="text-sm text-slate-400 mt-1">A test for your memory.</p></div></a>
-                <a href="./game-connect-four.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1e40af/ffffff?text=Connect+Four" alt="A game of Connect Four with red and yellow discs"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Connect Four</h3><p class="text-sm text-slate-400 mt-1">Classic two-player strategy.</p></div></a>
-                <a href="./game-tic-tac-toe.html" class="block bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group"><img class="w-full h-40 object-cover" src="https://placehold.co/400x225/1f2937/ffffff?text=Tic-Tac-Toe" alt="A completed game of Tic-Tac-Toe with X and O marks"><div class="p-4"><h3 class="font-bold text-lg text-white group-hover:text-blue-400">Tic-Tac-Toe</h3><p class="text-sm text-slate-400 mt-1">The original paper-and-pencil game.</p></div></a>
-            </div>
-        </section>
-    </main>
+  <footer class="mt-12 py-6 text-center text-gray-500 text-sm bg-white shadow-inner">
+    <div class="container mx-auto px-6">
+      <div class="mb-2">
+        <a href="about.html" class="px-2 hover:text-blue-600 transition">About Us</a> |
+        <a href="contact.html" class="px-2 hover:text-blue-600 transition">Contact Us</a> |
+        <a href="privacy.html" class="px-2 hover:text-blue-600 transition">Privacy Policy</a> |
+        <a href="terms.html" class="px-2 hover:text-blue-600 transition">Terms of Service</a>
+      </div>
+      <div>
+        © 2025 H5 Game Park. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryButtons = document.querySelectorAll('.category-btn');
+      const searchInput = document.querySelector('input[placeholder="Search games..."]');
+      const gameCards = document.querySelectorAll('.game-card');
+      
+      let currentCategory = 'all';
 
-    <footer class="bg-slate-900 border-t border-slate-800"><div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-slate-500"><p>&copy; 2025 GridVerse. All Rights Reserved.</p></div></footer>
+      function filterGames() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        gameCards.forEach(card => {
+          const cardCategory = card.dataset.category;
+          const title = card.querySelector('h2').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+
+          const categoryMatch = (currentCategory === 'all' || cardCategory === currentCategory);
+          const searchMatch = (title.includes(searchTerm) || description.includes(searchTerm));
+
+          if (categoryMatch && searchMatch) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          currentCategory = this.dataset.category;
+
+          categoryButtons.forEach(btn => {
+            btn.classList.remove('bg-blue-500', 'text-white');
+            btn.classList.add('bg-gray-100', 'text-gray-600');
+          });
+          this.classList.add('bg-blue-500', 'text-white');
+          this.classList.remove('bg-gray-100', 'text-gray-600');
+
+          filterGames();
+        });
+      });
+
+      searchInput.addEventListener('input', filterGames);
+    });
+  </script>
 </body>
 </html>
